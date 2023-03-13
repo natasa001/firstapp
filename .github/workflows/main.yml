@@ -1,4 +1,4 @@
-- name: fork: Deploy Flutter web app to github pages
+- name: Firstapp web page
   # You may pin to the exact commit or the version.
   # uses: jeremynac/flutter-gh-pages@7f889304fe69cbf1d420d2517f516e0d95cbd1ef
   uses: jeremynac/flutter-gh-pages@beta
