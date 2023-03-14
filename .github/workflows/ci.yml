@@ -68,7 +68,7 @@ jobs:
       contents: write
     steps:
       - name: Download APK from build
-        uses: actions/download-artifact@v2.1.1
+        uses: actions/download-artifact@v3
         with:
           name: apk
       - name: Display structure of downloaded files
@@ -88,7 +88,4 @@ jobs:
         # env:
         #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./app-release.apk
-          asset_name: app-release.apk
-          asset_content_type: application/zip
+          files: app-release.apk
