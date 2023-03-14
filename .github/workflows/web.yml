@@ -26,7 +26,7 @@ jobs:
         with:
           flutter-version: "3.7.6"
           channel: "stable"
-        env: FLUTTER_BASE_HREF:/${{ github.event.repository.name }}/
+      - run: export FLUTTER_BASE_HREF=/${{ github.event.repository.name }}/
       - run: flutter config --enable-web
       - run: flutter pub get
       - run: flutter test
